@@ -2,5 +2,8 @@ import json
 
 def lambda_handler(event, context):
     return {
-        "siteOwner": "Jake"
+        "statusCode": 200,
+        "body": {
+            "siteOwner": "Jake"
+        }
     }
