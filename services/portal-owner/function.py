@@ -3,7 +3,7 @@ import json
 def lambda_handler(event, context):
     return {
         "statusCode": 200,
-        "body": {
+        "body": json.dumps({
             "siteOwner": "Jake"
-        }
+        }, sort_keys=True)
     }
